@@ -5,12 +5,14 @@ import java.util.Scanner;
 
 import com.algorithm.sort.BubbleSort;
 import com.algorithm.sort.InsertionSort;
+import com.algorithm.sort.MergeSort;
+import com.algorithm.sort.SelectionSort;
 
 public class testSort {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»×é´ıÅÅĞòÊı×Ö£¬ÒÔ¡®,¡¯·Ö¸ô£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ç»„å¾…æ’åºæ•°å­—ï¼Œä»¥â€˜,â€™åˆ†éš”ï¼š");
 		String str = input.next();
 		String[] strp = str.split(",");
 		int[] arr = new int[strp.length];
@@ -18,8 +20,8 @@ public class testSort {
 			arr[i] = Integer.valueOf(strp[i]);
 		}
 		
-		System.out.println("Ã°ÅİÅÅĞòºóÎª£º");
-		BubbleSort.bubbleSort(arr);
+		System.out.println("é€‰æ‹©æ’åºåä¸ºï¼š");
+		SelectionSort.directSelectionSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 

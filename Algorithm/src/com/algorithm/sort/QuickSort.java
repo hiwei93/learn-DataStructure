@@ -1,12 +1,12 @@
 package com.algorithm.sort;
 /**
- * ¿ìËÙÅÅĞò
+ * å¿«é€Ÿæ’åº
  */
 public class QuickSort {
 
 	private static int partition(int[] arr, int low, int high){
 		int pivotPointer = low;
-		int pivotkey = arr[low];  // ±ê¼ÇÊàÅ¦
+		int pivotkey = arr[low];  // æ ‡è®°æ¢çº½
 		
 		while (low < high) {
 			while (low < high && arr[high] >= pivotkey) {
