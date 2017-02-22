@@ -29,28 +29,28 @@ public class MergeSort {
 	 * @param high
 	 */
 	private static void merge(int[] arr, int low, int mid, int high) {
-		int[] temp = new int[arr.length];
+		int[] temp = new int[high - low + 1];
 		
 		int i = low;
 		int j = mid + 1;
 		int k = 0;
-		while (i < high) {
-			if(arr[i] < arr[j]){
+		while (i <= mid && j <= high) {
+			if (arr[i] <= arr[j]) {
 				temp[k++] = arr[i++];
 			} else {
 				temp[k++] = arr[j++];
 			}
 		}
 		
-		while (i < mid) {
+		while (i <= mid) {
 			temp[k++] = arr[i++];
 		}
 		
-		while(j < high) {
+		while(j <= high) {
 			temp[k++] = arr[j++];
 		}
 		
-		for(int n = 0; n < temp.length - 1; n++) {
+		for(int n = 0; n < temp.length; n++) {
 			arr[low + n] = temp[n];
 		}
 	}
