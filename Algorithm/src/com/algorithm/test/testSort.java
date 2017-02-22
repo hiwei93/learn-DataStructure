@@ -21,7 +21,7 @@ public class testSort {
 		}
 		
 		System.out.println("选择排序后为：");
-		SelectionSort.directSelectionSort(arr);
+		MergeSort.mergeSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 
