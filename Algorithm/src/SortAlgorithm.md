@@ -11,4 +11,6 @@
 > 3. 平均速度最快：快速排序
 > 4. 不稳定：快速排序、希尔排序、堆排序
 
-参考：[图解程序员必须掌握的Java常用8大排序算法](http://www.jb51.net/article/70396.htm)、[面试中的 10 大排序算法总结](http://www.codeceo.com/article/10-sort-algorithm-interview.html#0-tsina-1-10490-397232819ff9a47a7b7e80a40613cfe1)
+参考：
+1. [图解程序员必须掌握的Java常用8大排序算法](http://www.jb51.net/article/70396.htm)
+2. [面试中的 10 大排序算法总结](http://www.codeceo.com/article/10-sort-algorithm-interview.html#0-tsina-1-10490-397232819ff9a47a7b7e80a40613cfe1)
